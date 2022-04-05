@@ -13,9 +13,7 @@
 
     <bean name="scores" class="com.anurag.spring.refTypes.Scores" p:physics="80" p:chemistry="70" p:maths="90" />
     <bean name="student" class="com.anurag.spring.refTypes.Student" p:name="Virat Kohli">
-        <property name="scores">
-            <ref bean="scores" />
-        </property>
+        <property name="scores" ref="scores" />
     </bean>
 
     <context:annotation-config />
