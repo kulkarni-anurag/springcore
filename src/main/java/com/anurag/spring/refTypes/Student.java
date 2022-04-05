@@ -22,6 +22,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Scores: ["+scores+"]";
+        return "Student Name: "+name+"\nScores: ["+scores+"]";
     }
 }
