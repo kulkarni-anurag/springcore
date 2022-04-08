@@ -11,7 +11,7 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
 
-    <bean name="employee" class="com.anurag.spring.innerbeans.Employee" p:id="123">
+    <bean name="employee" class="com.anurag.spring.innerbeans.Employee" p:id="123" scope="prototype">
         <property name="address">
             <bean class="com.anurag.spring.innerbeans.Address" p:hno="111" p:street="Paud Road" p:city="Pune" />
         </property>
