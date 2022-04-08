@@ -11,15 +11,11 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
 
-    <bean name="address" class="com.anurag.spring.constructorinjection.Address" p:hno="123" p:street="Karve Road" p:city="Pune" />
+    <bean name="address" class="com.anurag.spring.constructorinjection.Address" p:hno="203" p:street="Karve Road" p:city="Pune" />
 
     <bean name="employee" class="com.anurag.spring.constructorinjection.Employee">
-        <constructor-arg>
-            <value>203</value>
-        </constructor-arg>
-        <constructor-arg>
-            <ref bean="address" />
-        </constructor-arg>
+        <constructor-arg value="123" />
+        <constructor-arg ref="address" />
     </bean>
 
 </beans>
